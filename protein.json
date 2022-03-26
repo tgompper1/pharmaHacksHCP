@@ -5,7 +5,7 @@
         "type of impact": "Aggregation of drugs",
         "MW (kDa)": "72.4",
         "pI": "5.1",
-        "function": "Protein folding and quality control in the endoplasmic reticulum lumen",  
+        "function": "Protein folding and quality control in the endoplasmic reticulum lumen"  
     }, 
     {
         "protein name": "Alpha-enolase" ,
@@ -13,7 +13,7 @@
         "type of impact": "Modification of drug",
         "MW (kDa)": "15.5",
         "pI": "5.0",
-        "function": "Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruvate",  
+        "function": "Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruvate"  
     },
     {
         "protein name": "Annexin A5" ,
@@ -21,7 +21,7 @@
         "type of impact": "Immunogenic response",
         "MW (kDa)": "36.1",
         "pI": "4.9",
-        "function": "Binds with high affinity to phospholipids and serves as a marker for apoptosis",  
+        "function": "Binds with high affinity to phospholipids and serves as a marker for apoptosis"
     },
     {
         "protein name": "Clusterin" ,
@@ -29,7 +29,7 @@
         "type of impact": "Immunogenic response",
         "MW (kDa)": "51.8",
         "pI": "5.5",
-        "function": "Multifunctional disulfide-linked heterodimeric glycoprotein associated with clearance of cellular debris and apoptosis",  
+        "function": "Multifunctional disulfide-linked heterodimeric glycoprotein associated with clearance of cellular debris and apoptosis"  
     },
     {
         "protein name": "Lipoprotein lipase" ,
@@ -37,7 +37,7 @@
         "type of impact": "Degradation of polysorbates",
         "MW (kDa)": "50.5",
         "pI": "8.0",
-        "function": "Catalyzes the hydrolysis of triacylglycerol of LDL and regulates the plasma concentratio of triglycerides and HDL",  
+        "function": "Catalyzes the hydrolysis of triacylglycerol of LDL and regulates the plasma concentratio of triglycerides and HDL"  
     },
     {
         "protein name": "Lysosomal acid lipase" ,
@@ -45,7 +45,7 @@
         "type of impact": "Degredation of polysorbates",
         "MW (kDa)": "45.6",
         "pI": "7.3",
-        "function": "Hyrolyzes cholsertol esters and triglycerides",  
+        "function": "Hyrolyzes cholsertol esters and triglycerides"  
     },
     {
         "protein name": "C-X-C motif chemokine 3" ,
@@ -53,7 +53,7 @@
         "type of impact": "Immunogenic response",
         "MW (kDa)": "11.0",
         "pI": "9.1",
-        "function": "Cytokine with possible oncogenic properties",  
+        "function": "Cytokine with possible oncogenic properties"  
     },
     {
         "protein name": "Monocyte chemoattractant Protein-1" ,
@@ -61,7 +61,7 @@
         "type of impact": "Cytokine release",
         "MW (kDa)": "15.9",
         "pI": "9.3",
-        "function": "Acts as a ligant for C-C chemokine receptor",  
+        "function": "Acts as a ligant for C-C chemokine receptor"  
     },
 ]
 
