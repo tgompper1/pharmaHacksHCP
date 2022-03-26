@@ -1,2 +1,2 @@
 # pharmaHacksHCP
-Tess and Madi's PharmaHacks 2022 project. Working Host Cell Protein data and accessibility 
+Tess and Madi's PharmaHacks 2022 project. Working with Host Cell Protein data and accessibility 
