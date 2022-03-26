@@ -24,12 +24,12 @@
         "function": "Binds with high affinity to phospholipids and serves as a marker for apoptosis",  
     },
     {
-        "protein name": "C-X-C motif chemokine 3" ,
+        "protein name": "Clusterin" ,
         "impact" : "Immunogenicity",
         "type of impact": "Immunogenic response",
-        "MW (kDa)": "11.0",
-        "pI": "9.1",
-        "function": "Cytokine with possible oncogenic properties",  
+        "MW (kDa)": "51.8",
+        "pI": "5.5",
+        "function": "Multifunctional disulfide-linked heterodimeric glycoprotein associated with clearance of cellular debris and apoptosis",  
     },
     {
         "protein name": "Lipoprotein lipase" ,
@@ -38,6 +38,30 @@
         "MW (kDa)": "50.5",
         "pI": "8.0",
         "function": "Catalyzes the hydrolysis of triacylglycerol of LDL and regulates the plasma concentratio of triglycerides and HDL",  
+    },
+    {
+        "protein name": "Lysosomal acid lipase" ,
+        "impact" : "Formulation",
+        "type of impact": "Degredation of polysorbates",
+        "MW (kDa)": "45.6",
+        "pI": "7.3",
+        "function": "Hyrolyzes cholsertol esters and triglycerides",  
+    },
+    {
+        "protein name": "C-X-C motif chemokine 3" ,
+        "impact" : "Biological function in humans",
+        "type of impact": "Immunogenic response",
+        "MW (kDa)": "11.0",
+        "pI": "9.1",
+        "function": "Cytokine with possible oncogenic properties",  
+    },
+    {
+        "protein name": "Monocyte chemoattractant Protein-1" ,
+        "impact" : "Biological function in humans",
+        "type of impact": "Cytokine release",
+        "MW (kDa)": "15.9",
+        "pI": "9.3",
+        "function": "Acts as a ligant for C-C chemokine receptor",  
     },
 ]
 
