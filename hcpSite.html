@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        body{ position: relative;
+                width: 1440px;
+                height: 1024px;
+                background: rgba(123, 59, 40, 0.42);}
+        h1 {position: absolute;
+                width: 1166px;
+                height: 152px;
+                left: calc(50% - 1166px/2);
+                top: 0px;
+                font-family: 'Kadwa';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 96px;
+                line-height: 193px;
+                text-align: center;
+                color: #001E29;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);}
+        p { text-align: center;}
+    </style>    
+</head>
     <body>
+    
         <h1>Host Cell Proteins</h1>
         <p>
             With this website we are hoping to increase awareness of  the impacts of Host Cell Proteins.
         </p>
-        <select id="dropDownMenu" onchange="change_dropdownmenu(this.value)">
-            <option value="">Choose an impact:</option>
-            <option value = "drugQuality">Drug Quality</option>
-            <option value="immunogenicity">Immunogenicity</option>
-            <option value ="bioFunction">Biological function in humans</option>
-            <option value ="formulation">Formulation</option>
-        </select>
-    </body>
+        
+        <div>
+            <select id="dropDownMenu" onchange="change_myselect(this.value)" >
+               <option value="">Choose an impact:</option>
+                <option value = "Drug quality">Drug Quality</option>
+                <option value="Immunogenicity">Immunogenicity</option>
+                <option value ="Biological function in humans">Biological function in humans</option>
+                <option value ="Formulation">Formulation</option>
+            </select>
+    
+        </div>
+        
+        <div id = "debug">
+            <ul id = "ps">
+                
+            </ul>
+        </div>
+        
+        <script>
+            function change_myselect(sel){
+                fetch("protein.json")
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.proteins)
+                    for(var i = 0; i < 8 ; i++){
+                        var imp = data.proteins[i].impact
+                        if(imp === sel ){
+                            document.querySelector("#ps").innerHTML += "<li>";
+                            document.querySelector("#ps").innerHTML += JSON.stringify(data.proteins[i].proteinName); 
+                            document.querySelector("#ps").innerHTML += "</li>";  
+                        }  
+                    }
+                })
+            }
+        </script>
+  </body>
 </html>
