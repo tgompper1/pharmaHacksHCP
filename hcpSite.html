@@ -3,32 +3,60 @@
 <head>
     <style>
         body{ position: relative;
-                width: 1440px;
-                height: 1024px;
-                background: rgba(123, 59, 40, 0.42);}
-        h1 {position: absolute;
-                width: 1166px;
-                height: 152px;
-                left: calc(50% - 1166px/2);
+                width: auto;
+                height: auto;
+                background: #140F27;}
+        h1{ position: absolute;
+                width: 1507px;
+                height: 143px;
+                right: 3px;
+                left: 50px;
                 top: 0px;
-                font-family: 'Kadwa';
+                justify-content: right;
+                font-family: 'Poppins';
                 font-style: normal;
-                font-weight: 400;
-                font-size: 96px;
-                line-height: 193px;
+                font-weight: 700;
+                font-size: 100px;
+                line-height: 210px;
                 text-align: center;
-                color: #001E29;
+                color: #CDE1FD;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);}
         p { text-align: center;}
-    </style>    
+        e1 {position: absolute;
+                width: 446px;
+                height: 450px;
+                left: -56px;
+                top: 60px;
+                background: rgba(127, 126, 167, 0.1);
+                border-radius: 50%;}
+        e2{position: absolute;
+                width: 406px;
+                height: 390px;
+                left: 233px;
+                top: 283px;
+                background: rgba(49, 110, 229, 0.1);
+                border-radius: 50%;}
+        e3{position: absolute;
+                width: 450px;
+                height: 470px;
+                left: 0px;
+                top: 466px;
+                background: rgba(183, 78, 129, 0.1);
+                border-radius: 50%;}
+    </style>  
+    
 </head>
     <body>
     
-        <h1>Host Cell Proteins</h1>
+        <h1>HOST CELL PROTEINS</h1> 
         <p>
-            With this website we are hoping to increase awareness of  the impacts of Host Cell Proteins.
+            With this website we are hoping to increase awareness of the impacts of Host Cell Proteins.
         </p>
-        
+
+        <e1></e1>
+        <e2></e2>
+        <e3></e3>
+
         <div>
             <select id="dropDownMenu" onchange="change_myselect(this.value)" >
                <option value="">Choose an impact:</option>
@@ -56,7 +84,7 @@
                         var imp = data.proteins[i].impact
                         if(imp === sel ){
                             document.querySelector("#ps").innerHTML += "<li>";
-                            document.querySelector("#ps").innerHTML += JSON.stringify(data.proteins[i].proteinName); 
+                            document.querySelector("#ps").innerHTML +=  JSON.stringify(data.proteins[i].proteinName); 
                             document.querySelector("#ps").innerHTML += "</li>";  
                         }  
                     }
