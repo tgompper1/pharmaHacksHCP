@@ -60,6 +60,27 @@
                 height: 1013px;
                 left: -284px;
                 top: 172px;}
+        select{position: absolute;
+                width: 286px;
+                height: 25px;
+                left: 903px;
+                top: 355px;
+                background: #CDE1FD;
+                color:#140F27
+            }
+        ul{color: #FFFFFF;
+                position: absolute;
+                width: 445px;
+                height: 180px;
+                left: 873px;
+                top: 380px;
+                list-style: none;
+                 text-decoration: none;
+                 margin:10px 0;
+        }
+        li{
+            margin: 10px;
+        }
     </style>  
     
 </head>
@@ -83,14 +104,12 @@
                 <option value ="Biological function in humans">Biological function in humans</option>
                 <option value ="Formulation">Formulation</option>
             </select>
-    
-        </div>
-        
-        <div id = "debug">
             <ul id = "ps">
                 
             </ul>
         </div>
+        
+    
         
         <script>
             function change_myselect(sel){
@@ -102,7 +121,7 @@
                         var imp = data.proteins[i].impact
                         if(imp === sel ){
                             document.querySelector("#ps").innerHTML += "<li>";
-                            document.querySelector("#ps").innerHTML +=  JSON.stringify(data.proteins[i].proteinName); 
+                            document.querySelector("#ps").innerHTML +=  data.proteins[i].proteinName; 
                             document.querySelector("#ps").innerHTML += "</li>";  
                         }  
                     }
