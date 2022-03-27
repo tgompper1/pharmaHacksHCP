@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{ position: relative;
+                width: auto;
+                height: auto;
+                background: #140F27;}
+        h1{ position: absolute;
+                width: 1507px;
+                height: 143px;
+                right: 3px;
+                left: 50px;
+                top: 0px;
+                justify-content: right;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 100px;
+                line-height: 210px;
+                text-align: center;
+                color: #CDE1FD;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);}
+        p { position: absolute;
+                width: 1763px;
+                height: 78px;
+                left:-10px;
+                top: 200px;
+                justify-content: right;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 54px;
+                text-align: center;
+                color: #FFFFFF;}
+        e1 {position: absolute;
+                width: 316px;
+                height: 320px;
+                left: 0px;
+                top: 80px;
+                background: rgba(127, 126, 167, 0.1);
+                border-radius: 50%;}
+        e2{position: absolute;
+                width: 316px;
+                height: 320px;
+                left: 200px;
+                top: 283px;
+                background: rgba(49, 110, 229, 0.1);
+                border-radius: 50%;}
+        e3{position: absolute;
+                width:316px;
+                height: 320px;
+                left: 0px;
+                top: 350px;
+                background: rgba(183, 78, 129, 0.1);
+                border-radius: 50%;}
+    </style>  
+    
+</head>
+    <body>
+    
+        <h1>HOST CELL PROTEINS</h1> 
+        <p>
+            With this website we are hoping to increase awareness of the impacts of Host Cell Proteins.
+        </p>
+
+        <e1></e1>
+        <e2></e2>
+        <e3></e3>
+
+        <div>
+            <select id="dropDownMenu" onchange="change_myselect(this.value)" >
+               <option value="">Choose an impact:</option>
+                <option value = "Drug quality">Drug Quality</option>
+                <option value="Immunogenicity">Immunogenicity</option>
+                <option value ="Biological function in humans">Biological function in humans</option>
+                <option value ="Formulation">Formulation</option>
+            </select>
+    
+        </div>
+        
+        <div id = "debug">
+            <ul id = "ps">
+                
+            </ul>
+        </div>
+        
+        <script>
+            function change_myselect(sel){
+                fetch("protein.json")
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.proteins)
+                    for(var i = 0; i < 8 ; i++){
+                        var imp = data.proteins[i].impact
+                        if(imp === sel ){
+                            document.querySelector("#ps").innerHTML += "<li>";
+                            document.querySelector("#ps").innerHTML +=  JSON.stringify(data.proteins[i].proteinName); 
+                            document.querySelector("#ps").innerHTML += "</li>";  
+                        }  
+                    }
+                })
+            }
+        </script>
+  </body>
+</html>
